@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #top-section{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,auto);
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 100px;
+        gap: 20px;
+
+      }
+      #top-section>div{
+        /* border: 1px solid green; */
+      }
+      .heading{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        box-sizing: border-box;
+        line: height 5px; ;
+        margin-bottom: 20px;
+      }
+      #music {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 20px;
+        /* border: 1px solid red; */
+        box-sizing: border-box;
+      }
+      #music>div{
+        /* border: 1px solid blue; */
+        text-align: center;
+        line-height: 10px;
+      }
+      #pricing{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,auto);
+        /* border: 1px solid green; */
+        gap: 10px;
+        margin: auto;
+        box-sizing: border-box;
+      }
+      #pricing>div{
+        /* border: 1px solid red; */
+        padding: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        box-sizing: border-box;
+      }
+      button{
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+        padding: 5px;
+        margin-left: 20px;
+      }
+      u{
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: blue;
+        margin-left: 20px;
+      }
+      ul{
+        color: green;
+      }
+
+
+
+
+      /* Medium screens - take min width and max width according to your screen sizes */
+      @media all and (min-width: 401px) and (max-width: 720px) {
+        #music>div{
+          display:flex;
+          flex-direction: column;
+          padding: 10px;
+        }
+      #music{
+       
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto;
+      }
+      #pricing>div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      
+      #pricing{
+        
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto;
+        
+      }
+
+
+
+
+      }
+
+      /* Small screens - take min width and max width according to your screen sizes */
+
+      @media all and (min-width: 81px) and (max-width: 400px) {
+        #music>div{
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+        
+      }
+      #pricing>div{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      #music{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+      }
+      #pricing{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        
+      }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Do not change class names and IDs -->
+
+    <!-- Top section -->
+    <div id="top-section">
+      <div class="heading">
+        <h1>Get ready for seamless online music</h1>
+        <p>
+          Utrust is a seamless integration that gives e-commerce businesses the
+          power to accept digital currencies - and get all the benefits you
+          can’t with just traditional payment methods.
+        </p>
+      </div>
+
+      <!-- Music cards -->
+      <div id="music">
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/1_313769.jpeg" alt="">
+        <h3>offline mode.</h3>
+        <p>Save and listen anywhere.</p>
+        </div>
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/2_656773.jpeg" alt="">
+          <h3>offline mode.</h3>
+          <p>Save and listen anywhere.</p>
+        </div>
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/3_837237.jpeg" alt=""> <h3>offline mode.</h3>
+          <p>Save and listen anywhere.</p></div>
+        <div><img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-03-13/4_842327.jpeg" alt=""> <h3>offline mode.</h3>
+          <p>Save and listen anywhere.</p></div>
+      </div>
+    </div>
+
+    <!-- bottom section -->
+
+    <div class="heading">
+      <h1>Listen free or subscribe to MusicLab Premium.</h1>
+      <p>
+        Utrust is a seamless integration that gives e-commerce businesses the
+        power to accept digital currencies - and get all the benefits you can’t
+        with just traditional payment methods.
+      </p>
+    </div>
+
+    <!-- Pricing cards -->
+    <div id="pricing">
+      <div>
+        <h2>musicBox free</h2>
+        <u>$0.00 month</u>
+        <ul>Online Listening</ul>
+        <ul>Regular Audio</ul>
+        <ul>With Advertising</ul>
+        <ul>30 Skips per day</ul>
+        <button>Get free</button>
+      </div>
+      <div><h2>musicBox free</h2>
+        <u>$0.00 month</u>
+        <ul>Online Listening</ul>
+        <ul>Regular Audio</ul>
+        <ul>With Advertising</ul>
+        <ul>30 Skips per day</ul>
+        <button>Get free</button></div>
+      <div><h2>musicBox free</h2>
+        <u>$0.00 month</u>
+        <ul>Online Listening</ul>
+        <ul>Regular Audio</ul>
+        <ul>With Advertising</ul>
+        <ul>30 Skips per day</ul>
+        <button>Get free</button></div>
+    </div>
+  </body>
+</html>
